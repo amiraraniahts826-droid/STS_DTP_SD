@@ -1,0 +1,232 @@
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf7ff;
+    color: #493b56;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #d9c2f0, #f7cde5);
+    color: #493456;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #a985c8;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #8c68ad;
+}
+
+/* Bagian utama */
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(169, 133, 200, 0.12);
+    border: 1px solid #f0e3f8;
+}
+
+h2 {
+    color: #9169b1;
+    margin-bottom: 10px;
+}
+
+section > p {
+    margin-bottom: 20px;
+    color: #786b80;
+}
+
+/* Form */
+fieldset {
+    border: 1px solid #e4ccec;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    color: #986cb7;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #5c496b;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #decce9;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #493b56;
+    background-color: #fdfaff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #b68bd5;
+    box-shadow: 0 0 5px rgba(182, 139, 213, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Tombol */
+button {
+    background-color: #c79bdc;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a879c4;
+}
+
+/* Pesan berhasil dan gagal */
+#form-laporan > p[style] {
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #f8eafa;
+}
+
+/* Tabel laporan */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+th {
+    background-color: #dfc9ef;
+    color: #533e65;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #f0e4f5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fdf5fb;
+}
+
+tbody tr:hover {
+    background-color: #f5e9fc;
+}
+
+td small {
+    color: #a078b7;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    color: #8c7898;
+    font-size: 14px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 9px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}  
